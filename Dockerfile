@@ -1,10 +1,10 @@
-FROM eclipse-temurin:19-jre-alpine
+FROM eclipse-temurin:24.0.1_9-jre-noble
 
-LABEL maintainer="jberrenberg"
-LABEL version="v6.1.0"
+LABEL maintainer="saskuu"
+LABEL version="v6.3.0"
 
-
-ADD https://downloads.sourceforge.net/project/davmail/davmail/6.1.0/davmail-6.1.0-3423.zip /tmp/davmail.zip
+https://altushost-swe.dl.sourceforge.net/
+ADD https://downloads.sourceforge.net/project/davmail/davmail/6.3.0/davmail-6.3.0-3627.zip /tmp/davmail.zip
 
 RUN adduser davmail -D && \
   mkdir /usr/local/davmail && \
